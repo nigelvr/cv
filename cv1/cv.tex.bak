@@ -190,8 +190,8 @@
       {Senior Software Developer}{Montreal, QC}
       \resumeItemListStart
         \resumeItem {Responsible for important automation ground work: automated jobs for pulling market data and executing transactions using Apache Airflow and Python}
-        \resumeItem {Responsible for development and maintenance of key trading tools, including an interpreter for a domain specific language which we used to express our trading strategies using Python and Pandas}
-        \resumeItem {Responsible for maintenance and development of automation tasks with Apache Airflow}
+        \resumeItem {Responsible for development and maintainance of key trading tools, including an interpreter for a domain specific language which we used to express our trading strategies using Python and Pandas}
+        \resumeItem {Responsible for maintainance and development of automation tasks with Apache Airflow}
 	\resumeItem {Maintenance of Jenkins jobs for the company's services}
 	\resumeItem {Mentoring junior members}
 %Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
@@ -201,7 +201,7 @@
       {ZeligSoft}{January 2018 -- November 2019}
       {Software Developer}{Gatineau, QC}
       \resumeItemListStart
-        \resumeItem {Development and maintenance of JavaScript bindings for OpenSplice DDS}
+        \resumeItem {Development and maintainance of JavaScript bindings for OpenSplice DDS}
         \resumeItem {Maintenance of Python bindings for OpenSplice DDS}
 	\resumeItem {Maintenance of OpenSplice build system (CMake, Jenkins)}
         \resumeItem {Maintenance of code generation tool for OpenSplice DDS}
