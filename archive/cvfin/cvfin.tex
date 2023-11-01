@@ -1,0 +1,218 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+            linkcolor = red,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\hypersetup{pdfborder = 0 0 0}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Nigel Redding} \\ \vspace{1pt}
+    \small
+    \raisebox{-0.1\height}\faPhone\ 343-322-8659 ~
+    \href{mailto:youremail@gmail.com}{\faEnvelope\ nvredding2@gmail.com} ~ \\
+    \href{github}{https://www.github.com/nigelvr} ~
+    % \vspace{-8pt}
+\end{center}
+
+
+% -----------Summary-----------
+\section{Professional Summary}
+  \small{I am a highly motivated and skilled software developer with five years of professional experience and a record of
+  spearheading the development of important software projects. I would like to grow in to a technical leadership
+  role.}
+\vspace{-5pt}
+% adjust vscape based on the space you want to leave between each section.
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Ottawa, Ottawa, Ontario}{}
+      {Master of Science - Mathematics}{Fall 2015 - Summer 2017}
+
+      \small{\textbf{Thesis}}\emph{The Convex Hull of the Highest Weight Orbit and the Carathéodory Orbitope}
+      
+    \resumeSubheading
+      {Carleton University, Ottawa}{}
+      {BSc - Mathematics and Computer Science}{Fall 2010 - January 2015}
+
+      {11.92/12 GPA}{}
+      %leave a line after this
+
+      \small{\textbf{Honours Project}}\emph{Torsion Points on Elliptic Curves}
+      
+      % \small{\textbf{Coursework: Course-1, Course-2, Course-3, Course-4}}
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------Technical Skilss-----------
+\section{Technical Skills}
+\scriptsize
+\begin{itemize}[leftmargin=0.1in, label={}]
+\item{\textbf{Languages and technical skills}}:
+   \begin{itemize}
+      \item Algorithmic trading: working with market data and trading systems
+      \item Strong Python skills
+      \item Strong C/C++ skills - multithreading and optimizing for performance
+      \item Strong debugging skills (gdb, valgrind)
+      \item Solid foundations in computer science
+   \end{itemize}
+   \vspace{2pt}
+\item{\textbf{Dev-ops and automation}}:
+   \begin{itemize}
+      \item Containers: Docker and Kubernetes
+      \item Jenkins
+      \item Apache Airflow
+      \item Make and CMake
+   \end{itemize}
+   \vspace{2pt}
+\item{\textbf{Other skills}}:
+   \begin{itemize}
+      \item Startup experience
+      \item Flex and Bison
+      \item The LLVM framework
+      \item Embedded development: some experience with NXP IMX and Raspberry Pi pico
+      \item Some experience with X86 and ARM assembly language
+   \end{itemize}
+\end{itemize}
+\normalsize
+\vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SociVolta}{November 2019 -- April 2023}
+      {Senior Software Developer}{Montreal, QC}
+      \resumeItemListStart
+        \resumeItem {Worked closely with research team to develop trading tools}
+        \resumeItem {Responsible for development and maintenance of key trading tools, including an interpreter for a domain specific language which we used to express our trading strategies using Python and Pandas}
+        \resumeItem {Responsible for important automation ground work: automated jobs for pulling market data and executing transactions using Apache Airflow and Python}
+	\resumeItem {Maintenance of Jenkins jobs for the company's services}
+	\resumeItem {Mentoring junior members}
+%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+    \resumeItemListEnd
+      
+    \resumeSubheading
+      {ZeligSoft}{January 2018 -- November 2019}
+      {Software Developer}{Gatineau, QC}
+      \resumeItemListStart
+        \resumeItem {Development and maintenance code generation tool for OpenSplice DDS: Tool written in C which translated OMG IDL into language-specific stubs}
+        \resumeItem {Development and maintenance of JavaScript bindings for OpenSplice DDS}
+        \resumeItem {Maintenance of Python bindings for OpenSplice DDS}
+	\resumeItem {Maintenance of OpenSplice build system (CMake, Jenkins)}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+% adjust vscape based on the space you want to leave between each section.
+
+\end{document}
+
